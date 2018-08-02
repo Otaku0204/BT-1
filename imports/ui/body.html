@@ -1,0 +1,26 @@
+
+        <body>
+            <h1><span class="blue">&lt;</span>VTH<span class="blue">&gt;</span> <span class="yellow">BT-1</span></h1>
+                <h2>Created with love by <a href="#" target="_blank">Vũ Trung Hiếu</a></h2>
+            <header><h1>BT-1</h1></header>
+
+            <table class="container">
+                <tr>
+                        <th><h1>Tên bản đồ</h1><form class="map new-task"><input type="text" name="text" placeholder="Nhập tên bản đồ" /></form></th>
+                        <th><h1>Mã điện thoại</h1><form class="phone new-task"><input type="text" name="text" placeholder="Nhập mã điện thoại" /></form></th>
+                        <th><h1>Mã ĐV hành chính</h1><form class="dvhc new-task"><input type="text" name="text" placeholder="Nhập mã ĐV hành chính" /></form></th>
+                        <th><h1>Cấp hành chính</h1><form class="chc new-task"><input type="text" name="text" placeholder="Nhập cấp hành chính" /></form></th>
+                        <th><h1>Địa danh</h1><form class="place new-task"><input type="text" name="text" placeholder="Nhập địa danh" /></form></th>
+                        <th><h1>Chức năng</h1><form class="using new-task"><input type="text" name="text" placeholder="Nhập chức năng" /></form></th>
+                </tr>
+                <tr>
+                    <td><ul>{{#each map}}{{> task}}{{/each}}</ul></td>
+                    <td><ul>{{#each phone}}{{> task}}{{/each}}</ul></td>
+                    <td><ul>{{#each dvhc}}{{> task}}{{/each}}</ul></td>
+                    <td><ul>{{#each chc}}{{> task}}{{/each}}</ul></td>
+                    <td><ul>{{#each place}}{{> task}}{{/each}}</ul></td>
+                    <td><ul>{{#each using}}{{> task}}{{/each}}</ul></td>
+
+                </tr>
+            </table>
+        </body>
